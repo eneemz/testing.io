@@ -1,0 +1,497 @@
+/****************************************/
+/*    GLOBAL EDITING   */
+/******************************************/
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/intro-1585677665.jpg");
+  background-position: center;
+  font-family: "Times New Roman", "Amatic SC", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+.navbar-brand {
+  height: initial;
+}
+
+.navbar * {
+  font-size: 1.6rem;
+}
+.btn-primary {
+  width: 50px;
+  height: 40px;
+  font-size: 15px;
+}
+/****************************************/
+/*          INDEX.HTML EDITING           */
+/******************************************/
+/*START OF HOME PAGE EDITING (index.html)*/
+div.Summary_transbox {
+  margin: 30px;
+  font-family: "Times New Roman", "Amatic SC", sans-serif;
+  background-color: white;
+  border: 1px solid black;
+  width: auto;
+  height: auto;
+  opacity: 0.75;
+  /*margin-left: 20px;*/
+  margin-left: 5%;
+  margin-right: 50%;
+  margin-bottom: 10%;
+  text-align: justify;
+}
+
+div.Summary_transbox h1 {
+  margin: 5%;
+  font-weight: bold;
+  color: black;
+  /*text-indent: 34%;*/
+  text-align: center;
+}
+div.Summary_transbox p {
+  /* margin: 2%;*/
+  font-weight: normal;
+  color: black;
+  text-indent: 5%;
+  margin-right: 8%;
+  margin-left: 0%;
+  margin-bottom: 8%;
+}
+/*end OF HOME PAGE EDITING (index.html)*/
+/*Start of Hours of Operation editing in index.html */
+div.Hours_of_Operations_transbox {
+  margin: 30px;
+  font-family: "Times New Roman", "Amatic SC", sans-serif;
+  background-color: white;
+  border: 1px solid black;
+  opacity: 0.7;
+  width: 500px;
+  margin-left: 50%;
+  margin-right: 10%;
+  margin-top: -20%;
+  margin-bottom: 2%;
+}
+div.Hours_of_Operations_transbox h1 {
+  margin: 5%;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+div.Hours_of_Operations_transbox p {
+  margin: 2%;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+}
+/*End of Hours of Operation editing in index.html */
+/****************************************/
+/*          APPETIZERS.HTML EDITING   */
+/******************************************/
+.appetizers {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+/****************************************/
+/*          BREAKFAST.HTML EDITING   */
+/******************************************/
+.breakfast {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+/****************************************/
+/*          LUNCH.HTML EDITING   */
+/******************************************/
+.lunch {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+/****************************************/
+/*          DINNER.HTML EDITING   */
+/******************************************/
+.dinner {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+/****************************************/
+/*          DRINKS.HTML EDITING   */
+/******************************************/
+.drinks {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+#image-card {
+  height: 50%;
+}
+
+#image-corona-extra {
+  height: 40%;
+}
+
+/****************************************/
+/*          DESSERT.HTML EDITING   */
+/******************************************/
+.dessert {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+#title {
+  font-size: 20px;
+}
+#price {
+  font-size: 15px;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  height: 40%;
+}
+
+/****************************************/
+/*          CONTACT US.HTML EDITING   */
+/******************************************/
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.Contact_container {
+  border-radius: 5px;
+  font-family: "Times New Roman", "Amatic SC", sans-serif;
+  background-color: #f2f2f2;
+  padding: 40px;
+  height: 790px;
+  width: 450px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 50%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+/*  
+EDITS FOR VEEVALIDATION FORM
+*/
+label {
+  padding: 0;
+}
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  height: 40px;
+}
+.d-block {
+  float: left;
+}
+.btn-success {
+  width: 100px;
+  height: 40px;
+  float: right;
+  font-size: 15px;
+  background-color: green;
+  border-color: green;
+}
+.btn-success:hover {
+  background-color: green;
+  border-color: green;
+}
+
+.btn-secondary:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.btn-secondary {
+  width: 100px;
+  height: 40px;
+  float: left;
+  font-size: 15px;
+  background-color: red;
+  border-color: red;
+}
+
+input[type="text"],
+select {
+  height: 40px;
+  font-size: 12px;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+textarea {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+.bv-no-focus-ring {
+  margin-top: 2%;
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show > .btn-success.dropdown-toggle {
+  background-color: green;
+  border-color: green;
+  color: white;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, 
+make the two columns stack on top of each other instead of next 
+to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/****************************************/
+/*          SIGN UP.HTML EDITING   */
+/******************************************/
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-top: 5%;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.SignUp_container {
+  border-radius: 5px;
+  font-family: "Times New Roman", "Amatic SC", sans-serif;
+  background-color: #f2f2f2;
+  padding: 40px;
+  height: 620px;
+  width: 450px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 50%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*  
+EDITS FOR VEEVALIDATION FORM
+*/
+label {
+  padding: 0;
+}
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  height: 40px;
+}
+.d-block {
+  float: left;
+}
+.btn-success {
+  width: 100px;
+  height: 40px;
+  float: right;
+  font-size: 15px;
+  background-color: green;
+  border-color: green;
+}
+.btn-success:hover {
+  background-color: green;
+  border-color: green;
+}
+
+.btn-secondary:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.btn-secondary {
+  width: 100px;
+  height: 40px;
+  float: left;
+  font-size: 15px;
+  background-color: red;
+  border-color: red;
+}
+
+input[type="text"],
+select {
+  height: 40px;
+  font-size: 12px;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+textarea {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+.bv-no-focus-ring {
+  margin-top: 2%;
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show > .btn-success.dropdown-toggle {
+  background-color: green;
+  border-color: green;
+  color: white;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+/****************************************/
+/*         FOOTER EDITING   */
+/******************************************/
+/*START OF FOOTER EDITING*/
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  padding: 4px 6px;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+div.footer p {
+  font-family: "Times New Roman", "Amatic SC", sans-serif;
+  color: white;
+  font-size: 15px;
+}
+/*END OF FOOTER EDITING*/
