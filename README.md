@@ -10,7 +10,7 @@ The Contact Us and Sign Up page will have a window pop up when the user clicks o
 
 [Pre-installation set up]
 
-1. Settings --> Apps --> Programs and Features --> Turn on Windows features on or off -->Enable Windows Subsystem for Linux
+1. Settings --> Apps --> Programs and Features --> Turn on ]Windows features on or off -->Enable Windows Subsystem for Linux
 2. install ubuntu using Microsoft store
 
 **\***in Ubuntu terminal, typ in these commands:

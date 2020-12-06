@@ -144,7 +144,7 @@ export default {
           // Username : 'cit384.final@gmail.com',
           // Password : '',
           To : emailValue,
-          From : "mexicanology384@gmail.com",
+          From : "cit384.final@gmail.com",
           Subject : "Promo Confirmation from Mexicanology",
           Body : bodyValue
           }).then((message) => {

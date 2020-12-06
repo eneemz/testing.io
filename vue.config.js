@@ -23,6 +23,6 @@ module.exports = {
     },
    // publicPath: '/CIT384_Final_Project-PUBLIC/'
    publicPath: process.env.NODE_ENV === 'production'
-      ? '/CIT384_Final_Project-PUBLIC/'
+      ? '/eneemz.github.io'
       : '/'
   }
