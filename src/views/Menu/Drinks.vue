@@ -6,6 +6,8 @@
       <div>
         <b-card no-body>
           <b-tabs pills card horizontal id="pills-card-tab">
+            <!------------START OF NON ALCOHOLIC DRINKS TAB------------------------------------------------>
+            <!----------row 1 : Non-alcholic drinks--------------->
             <b-tab title="Non-alcoholic Beverages" active id="non-al-drinks">
               <section role="region">
                 <div class="mt-3">
@@ -135,6 +137,7 @@
             </b-tab>
             <!------------END OF NON ALCOHOLIC DRINKS TAB------------------------------------------------>
 
+            <!------------START OF BEERS  TAB------------------------------------------------>
             <!----------row 1 : Beer drinks--------------->
             <b-tab title="Beer">
               <section role="region">
@@ -315,6 +318,7 @@
             </b-tab>
             <!------------END OF BEERS  TAB------------------------------------------------>
 
+            <!------------START OF RED WINE  TAB------------------------------------------------>
             <!----------row 1 : Red Wine drinks--------------->
             <b-tab title="Red Wine">
               <b-card-text
@@ -479,6 +483,7 @@
             </b-tab>
             <!------------END OF RED WINE TAB------------------------------------------------>
 
+            <!------------START OF WHITE WINE  TAB------------------------------------------------>
             <!----------row 1 : White Wine drinks--------------->
             <b-tab title="White Wine">
               <b-card-text
@@ -653,6 +658,7 @@
   </main>
 </template>
 
+<!---CSS EDITS FOR THIS VUE FILE ONLY USING <STYLE SCOPED> TAG--->
 <style scoped>
 #pedroncelli-zinfandel-mother-clone-card{
   height: 175px;

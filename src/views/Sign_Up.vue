@@ -1,13 +1,15 @@
 <template>
   <div class="sign_up">
-      <!----<h1>This is an contact us page</h1>--->
+      <!--START OF MAIN--->
       <main role="main">
         <div class="SignUp_container">
           <h1>Sign Up With Us!</h1>
         <p>Please fill in this form to recieve promotional offers, discounts, notices on special events, and so much more!</p>
           <div>
+            <!---START OF THE SIGN UP FORM USING VEEVALIDATE-->
             <validation-observer ref="observer" v-slot="{ handleSubmit }">
               <b-form  @submit.stop.prevent="handleSubmit(submitForm)">
+                <!---START OF FIRST NAME INPUT FIELD--->
                 <validation-provider
                   name="first name"
                   :rules="{ required: true, min: 3 }"
@@ -25,7 +27,9 @@
                     <b-form-invalid-feedback id="first_name-1-live-feedback">{{ validationContext.errors[0] }}</b-form-invalid-feedback>
                   </b-form-group>
                 </validation-provider>
+                <!---END OF FIRST NAME INPUT FIELD--->
             
+            <!---START OF LAST NAME INPUT FIELD--->
             <validation-provider
                   name="last name"
                   :rules="{ required: true, min: 3 }"
@@ -43,8 +47,9 @@
                     <b-form-invalid-feedback id="lname-2-live-feedback">{{ validationContext.errors[0] }}</b-form-invalid-feedback>
                   </b-form-group>
                 </validation-provider>
+                <!---END OF LAST NAME INPUT FIELD--->
             
-            
+            <!---START OF EMAIL INPUT FIELD--->
             <validation-provider
                   name="email address"
                   :rules="{ required: true, min: 3 }"
@@ -62,19 +67,22 @@
                     <b-form-invalid-feedback id="Email Address-3-live-feedback">{{ validationContext.errors[0] }}</b-form-invalid-feedback>
                   </b-form-group>
                 </validation-provider>
+                <!---END OF EMAIL INPUT FIELD--->
 
+                <!---Vue-recaptcha code including site key provided by reCAPTCHA API--->
                 <div style="margin-left: 30px">
                   <vue-recaptcha sitekey="6LftB-EZAAAAAMF09-TDRdB0QhkKDUM4vFmbFtnG" 
                   @verify="enableSubmit" style="padding-top: 10px; padding-bottom: 10px;"></vue-recaptcha>
                 </div>
 
+                <!----THE GREEN SIGN UP BUTTON---->
                  <b-button type="submit" variant="success">Sign Up</b-button>
               
-
+                <!----THE RED CANCEL BUTTON, routes back to Home page on click---->
                <router-link to="/"> <b-button class="ml-2">Cancel</b-button> </router-link> 
               </b-form>
             </validation-observer>
-
+            <!----END OF VEEVALIDATE---->
           </div>
       </div>
     </main>
@@ -102,10 +110,11 @@ export default {
       return dirty || validated ? valid : null;
     },
 
+    // Resets form
     resetForm() {
       this.form = {
-         fname: null,
-		lname: null,
+        fname: null,
+		    lname: null,
         mailaddr: null
         
       };
@@ -115,15 +124,15 @@ export default {
       });
     },
   
-    // onSubmit() {
-    //   this.showModal = true
-    // },
-
+    // Can only be called upon validation of form via VeeValidate
+    // Requires completion of reCAPTCHA to call sendEmail function
     submitForm (){
       if (this.form.disabled == false){
        this.sendEmail();
       }
     },
+
+    // function called upon verification of reCAPTCHA, 
     enableSubmit(){
        console.log("Verified, submit button enabled");
         this.form.disabled = false;
@@ -136,8 +145,10 @@ export default {
         bodyValue += fnameValue;
         bodyValue += ".</h1><p>Thank you for signing up! <br>";
         bodyValue += "You will receive alerts for the latest promotional offers, special discounts and events, and more!</p>"
-        // bodyValue += '<img src="https://cdn.glitch.com/e7004552-d942-4d85-a8ab-ab2059f7528f%2Fchopped%20chili2.jpg?v=1604969328556">'
 
+        //Email.send function provided by smtp.js
+        // Can use either SecureToken, or plain text email credentials.
+        // Plain text option is shown below but commented out
         Email.send({
           SecureToken : "7c6b77cb-8ce0-4c1b-bd02-5d37dae8493b",
           // Host : "smtp.gmail.com",
@@ -153,8 +164,10 @@ export default {
             this.doNotification();}
           })
           this.resetForm();
+          // Resets reCAPTCHA
           grecaptcha.reset();
     },
+    // Toast notification function, this is triggered in promise of Email.send function
     doNotification() {
         this.$toast.success("Thank you for subscribing. Check your email!", {
           position: "bottom-right",
@@ -170,6 +183,7 @@ export default {
           icon: true,
           rtl: false
         });
+        // Redirects user back to Home page
         this.$router.push({ path: '/' });
     }
      
